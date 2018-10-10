@@ -35,15 +35,21 @@ lCalendar移动端日期时间选择控件
 =========================================================================
 
 
-fork自：https://github.com/xfhxbb/LCalendar
+fork自：https://github.com/xfhxbb/LCalendar  
 
 
 
-2018-09-17
-因为工作，从Mdate.js用到LCalendar.js，现有项目使用rem单位，Mdate修改不成功，换成LCalendar，然而却已经两年没有更新了。
-经过大半天努力，终于调好支持rem单位了，目前是根据750设计稿来设定的rem，需要的童鞋，可自行调整使用(修改lCalendar.css)。
-lCalendar.js里，新增两个变量：
-topH：当列表显示第一个时，列表顶部的top，原值为8，现值为2
+
+2018-09-17  
+
+因为工作，从Mdate.js用到LCalendar.js，现有项目使用rem单位，Mdate修改不成功，换成LCalendar，然而却已经两年没有更新了。  
+
+经过大半天努力，终于调好支持rem单位了，目前是根据750设计稿来设定的rem，需要的童鞋，可自行调整使用(修改lCalendar.css)。  
+
+lCalendar.js里，新增两个变量：  
+
+topH：当列表显示第一个时，列表顶部的top，原值为8，现值为2  
+
 lHeight ：列表每行的高度，现为1rem(原值为1em)，不需要调整了，可以直接拿来就用，注意！这里的高度与css里的高度是对应的，如需修改，需同步。
 
 相比原DEMO，修改为移动端展示DEMO，
