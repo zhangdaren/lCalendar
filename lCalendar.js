@@ -119,7 +119,7 @@ window.LCalendar = (function() {
                     dd: date.getDate() - 1
                 };
                 if (/^\d{4}-\d{1,2}-\d{1,2}$/.test(_self.trigger.value)) {
-                    rs = _self.trigger.value.match(/(^|-)\d{1,4}/g);
+                    var rs = _self.trigger.value.match(/(^|-)\d{1,4}/g);
                     dateArr.yy = rs[0] - _self.minY;
                     dateArr.mm = rs[1].replace(/-/g, "") - 1;
                     dateArr.dd = rs[2].replace(/-/g, "") - 1;
@@ -180,7 +180,7 @@ window.LCalendar = (function() {
                     mm: date.getMonth()
                 };
                 if (/^\d{4}-\d{1,2}$/.test(_self.trigger.value)) {
-                    rs = _self.trigger.value.match(/(^|-)\d{1,4}/g);
+                    var rs = _self.trigger.value.match(/(^|-)\d{1,4}/g);
                     dateArr.yy = rs[0] - _self.minY;
                     dateArr.mm = rs[1].replace(/-/g, "") - 1;
                 } else {
@@ -272,7 +272,7 @@ window.LCalendar = (function() {
                     mi: date.getMinutes()
                 };
                 if (/^\d{4}-\d{1,2}-\d{1,2}\s\d{2}:\d{2}$/.test(_self.trigger.value)) {
-                    rs = _self.trigger.value.match(/(^|-|\s|:)\d{1,4}/g);
+                    var rs = _self.trigger.value.match(/(^|-|\s|:)\d{1,4}/g);
                     dateArr.yy = rs[0] - _self.minY;
                     dateArr.mm = rs[1].replace(/-/g, "") - 1;
                     dateArr.dd = rs[2].replace(/-/g, "") - 1;
@@ -338,7 +338,7 @@ window.LCalendar = (function() {
                     mm: d.getMinutes()
                 };
                 if (/^\d{2}:\d{2}$/.test(_self.trigger.value)) {
-                    rs = _self.trigger.value.match(/(^|:)\d{2}/g);
+                    var rs = _self.trigger.value.match(/(^|:)\d{2}/g);
                     e.hh = parseInt(rs[0].replace(/^0?/g, ""));
                     e.mm = parseInt(rs[1].replace(/:0?/g, ""))
                 }
